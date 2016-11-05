@@ -24,8 +24,8 @@ module.exports = {
         },
         include: path.join(__dirname, '.')
 			},{
-				test: /\.css$/,
-				loader: 'style-loader!css-loader?sourcemap'
+				test: /\.scss$/,
+				loader: 'style-loader!css-loader!sass-loader?sourcemap'
 			},{
 				test: /\.(jpe?g|png)$/,
 				loader: 'url-loader?limit=8192'

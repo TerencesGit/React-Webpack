@@ -1,0 +1,68 @@
+@import "normalize";
+html{
+	box-sizing: border-box;
+	*,*:after,*:before{
+		box-sizing: inherit;
+	}
+}
+html, body{
+	height: 100%;
+}
+ul{
+	margin: 0;	
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+body{
+	font-size: 16px;
+	color: #333;
+	background: #f0f0f0
+}
+$width: 1200px;
+$baseColor: #ccc;
+$headHeight: 60px;
+%text-center{
+	text-align: center
+}
+@mixin button {  
+  font-size: 1em;  
+  padding: 0.5em 1.0em;  
+  text-decoration: none;  
+  color: #333;  
+  border-radius: 3px;
+  cursor: pointer
+}
+button{
+	@include button
+}
+header, footer{
+	height: $headHeight;
+	line-height: $headHeight;
+	background: $baseColor
+}
+:global(.h2){
+	color: #00f;
+}
+.container{
+	width: $width;
+	margin: auto;
+}
+nav ul li{
+	display: inline-block;
+	padding: 0 2em;
+}
+nav ul li:hover{
+	background: #fff
+}
+.main{
+	height: 510px;
+	margin: auto;
+	@extend %text-center;
+}
+footer{
+	width: 100%;
+	@extend %text-center;
+}
