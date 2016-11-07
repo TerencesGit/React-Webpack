@@ -52,9 +52,12 @@ header, footer{
 }
 nav ul li{
 	display: inline-block;
+}
+nav ul li a{
+	display: inline-block;
 	padding: 0 2em;
 }
-nav ul li:hover{
+nav ul li:hover,nav ul li .active{
 	background: #fff
 }
 .main{
