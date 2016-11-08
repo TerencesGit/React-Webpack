@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
-import {render} from 'react-dom';
-import Routers from './Router'
+import {Link} from 'react-router';
 import Footer from './components/Footer';
-const mainImg = require('./images/react.jpg');
-import './css/style.scss';
-var App = React.createClass({
-	render() {
+export default class App extends Component{
+	render(){
 		return(
 			<div>
 				<header>
@@ -25,5 +22,4 @@ var App = React.createClass({
 			</div>
 		)
 	}
-})
-render(<Routers />,document.getElementById('app'))
+}

@@ -52,17 +52,19 @@ header, footer{
 }
 nav ul li{
 	display: inline-block;
+	margin: 0 2px;
 }
 nav ul li a{
 	display: inline-block;
 	padding: 0 2em;
+	font-size: 18px
 }
 nav ul li:hover,nav ul li .active{
 	background: #fff
 }
 .main{
 	height: 510px;
-	margin: auto;
+	margin: 0 auto;
 	@extend %text-center;
 }
 footer{

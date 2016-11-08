@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-export default class About extends Component{
+export default class Contact extends Component{
 	render(){
 		return (
 			<div className="main">
-				<h1>关于</h1>
-				{this.props.children}
+				<h1>连接（嵌套路由）</h1>
 			</div>
 		)
 	}
