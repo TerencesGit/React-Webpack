@@ -13,7 +13,6 @@ export default class App extends Component{
 							<li><Link activeClassName="active" to="/blog">Blog</Link></li>
 							<li><Link activeClassName="active" to="/project">Project</Link></li>
 							<li><Link activeClassName="active" to="/about">About</Link></li>
-							<li><Link activeClassName="active" to="/about/contact">Contact</Link></li>
 						</ul>
 					</nav>
 				</header>

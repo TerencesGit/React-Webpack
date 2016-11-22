@@ -7,13 +7,6 @@ import Project from './components/Project';
 import About from './components/About';
 //import Contact from './components/Contact';
 const Contact = () => <div><h1>Contact0000</h1><Links /></div>;
-// const Links = () =>
-//   <nav>
-//     <Link activeStyle={{color: 'red'}} to="/">Home</Link>
-//     <Link activeStyle={{color: 'red'}} to="/about">About</Link>
-//     <Link activeStyle={{color: 'red'}} to="/contact">Contact</Link>
-//   </nav>
-
 export default class Routers extends Component{
 	render(){
 		return(

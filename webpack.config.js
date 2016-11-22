@@ -1,5 +1,7 @@
-var webpack = require('webpack');
-var path = require('path');
+var webpack = require('webpack')
+var path = require('path')
+var OpenBrowserPlugin = require('open-browser-webpack-plugin')
+var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 module.exports = {
 	entry: [
 		'webpack/hot/dev-server',
@@ -11,7 +13,13 @@ module.exports = {
 		publicPath: '/static/'
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new OpenBrowserPlugin(),
+		new uglifyJsPlugin({
+			compress: {
+				warnings: false
+			}
+		})
 	],
 	module: {
 		loaders:[
@@ -25,7 +33,7 @@ module.exports = {
         include: path.join(__dirname, '.')
 			},{
 				test: /\.scss$/,
-				loader: 'style-loader!css-loader!sass-loader?sourcemap'
+				loader: 'style!css!sass'
 			},{
 				test: /\.(jpe?g|png)$/,
 				loader: 'url-loader?limit=8192'
